@@ -1,0 +1,8 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/isajgordeev/Desktop/VIDEOS/manim/PROJECTS/media/videos/font_experiments/1080p60/partial_movie_files/Biot_Savart/2724823860_575959728_3259214735.mp4'
+file 'file:/Users/isajgordeev/Desktop/VIDEOS/manim/PROJECTS/media/videos/font_experiments/1080p60/partial_movie_files/Biot_Savart/1164547788_3596543561_2663397451.mp4'
+file 'file:/Users/isajgordeev/Desktop/VIDEOS/manim/PROJECTS/media/videos/font_experiments/1080p60/partial_movie_files/Biot_Savart/1164547788_3493041802_3284166495.mp4'
+file 'file:/Users/isajgordeev/Desktop/VIDEOS/manim/PROJECTS/media/videos/font_experiments/1080p60/partial_movie_files/Biot_Savart/1164547788_3248028800_954606567.mp4'
+file 'file:/Users/isajgordeev/Desktop/VIDEOS/manim/PROJECTS/media/videos/font_experiments/1080p60/partial_movie_files/Biot_Savart/1164547788_3758280226_3871819040.mp4'
+file 'file:/Users/isajgordeev/Desktop/VIDEOS/manim/PROJECTS/media/videos/font_experiments/1080p60/partial_movie_files/Biot_Savart/1164547788_38601519_1433877548.mp4'
+file 'file:/Users/isajgordeev/Desktop/VIDEOS/manim/PROJECTS/media/videos/font_experiments/1080p60/partial_movie_files/Biot_Savart/1164547788_3493041802_4179020885.mp4'

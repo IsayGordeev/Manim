@@ -1,0 +1,95 @@
+from manim import *
+import numpy as np
+class BrownTheory(Scene):
+    def construct(self):
+        introtext = Tex('Let\'s consider random walk problem')
+        introtext.shift(UP*2)
+        # label = Tex('$\\vec r$')
+        dot = Dot([1,1,0])
+        dot0 = Dot()
+        # vector = Line(dot0.get_center(), dot.get_center())
+        vector1 = Arrow(ORIGIN, dot0.get_center() - dot.get_center(), buff=0)
+        vector1.add_updater(lambda z: z.become(Arrow(ORIGIN, dot.get_center() - dot0.get_center(), buff=0)))
+        tip_text = MathTex('\\vec r ').next_to(vector1.get_end(), DOWN)
+        tip_text.add_updater(lambda z: z.become(MathTex('\\vec r ').next_to(vector1.get_end(), DOWN+0.3*RIGHT)))
+        # self.add(vector)
+        numberplane = NumberPlane()
+        self.add(vector1,tip_text)
+        self.add(dot)
+        self.play(ShowCreationThenFadeOut(introtext))
+        self.play(Create(numberplane))
+        for x in range(5):
+            self.play(dot.animate(run_time=0.3).shift(np.random.uniform(0,1,3)))
+        text1 = Tex('Small particle is moved by two forces.',
+                        'Viscosity friction', ' Fluctuation force')
+        undertext1= Tex( 'B is motility')
+        undertext1.move_to(2*UP+2*RIGHT)
+        text1[0].move_to(UP)
+        dotvec = Group(dot, vector1, numberplane, tip_text)
+        self.wait(0.6)
+        self.play(ReplacementTransform(dotvec,text1[0]))
+        self.wait(0.6)
+
+        text1[1].move_to(3*UP)
+        # text1[4].move_to(2*UP)
+        text1[2].move_to(UP)
+        friction = MathTex('\\textbf F_{fr}=\\frac{1}{B}\\frac{d\\textbf r}{dt}')
+        friction.move_to(2*UP)
+        fluct = MathTex('\\textbf F_{fluct}=\\textbf X \\','\langle \\textbf X \\rangle =0')
+        self.play(ReplacementTransform(text1[0],text1[1],run_time=2))
+        self.play(TransformFromCopy(text1[1],friction))
+        self.play(friction.animate.shift(2*LEFT))
+        self.play(Write(undertext1))
+        self.play(Write(text1[2]))
+        self.play(TransformFromCopy(text1[2],fluct))
+        self.wait(1.5)
+        text2 = Tex('Langeven\'s equation - Second Newton\'s Law, including determined and random forces','Multiply by $\\textbf r$ and mean by time' ,'so as $\\overline{rX} = 0$')
+        undertext2 = Tex('Using the Law of Conservation Energy we obtain')
+        text2[0].scale(0.8)
+        text2[0].move_to(3*UP)
+        text2[1].move_to((UP))
+        text2[2].move_to((UP))
+        undertext2.move_to(UP)
+        self.play(Uncreate(text1))
+
+        self.play(ReplacementTransform(undertext1, text2[0]))
+        langeven =  MathTex('m\\frac{d^2\\textbf r}{dt^2} =',
+                            ' \\textbf X - \\frac{1}{B}\\frac{d\\textbf r}{dt}')
+        self.play(ReplacementTransform(fluct, langeven[0],run_time=4))
+        self.play(ReplacementTransform(friction, langeven[1]))
+        self.play(text2[0].animate.shift(2*DOWN))
+        self.wait(1.5)
+        langeven1 = MathTex('m\\overline {\\textbf r\\frac{d^2\\textbf r}{dt^2}} =',
+                            '\\overline{\\textbf r \\textbf X }- \\overline{\\textbf r\\frac{1}{B}\\frac{d\\textbf r}{dt}}')
+        self.play(ReplacementTransform(text2[0],text2[1]))
+        self.play(ReplacementTransform(langeven, langeven1,run_time=4))
+        self.wait(1.5)
+        langeven2 = MathTex('\\frac{1}{2}\\frac{d^2\\overline{\\textbf r^2}}{dt^2} -  \\left(\\frac{d\\overline{\\textbf r}}{dt}\\right)^2 =',
+                            '- \\frac{1}{2mB}\\frac{d\\overline{\\textbf r^2}}{dt}')
+        self.play(ReplacementTransform(text2[1], text2[2]))
+        self.play(ReplacementTransform(langeven1, langeven2))
+        self.wait(1.5)
+
+        self.play(ReplacementTransform(text2[2], undertext2))
+        langeven3 = MathTex(
+            '\\frac{m}{2}\\frac{d^2\\overline{\\textbf r^2}}{dt^2} + \\frac{1}{2B}\\frac{d\\overline{\\textbf r^2}}{dt}   = 3kT',
+            '')
+        self.play(ReplacementTransform(langeven2, langeven3))
+        final1 = Group(undertext2, langeven3)
+        self.play(final1.animate.shift(1.1*UP))
+        langevensolut = MathTex(
+            '\\overline{\\textbf r^2} = r^2_0+6kTBt+','C\\exp\\left( -\\frac{t}{mB} \\right)'
+        )
+        self.play(Write(langevensolut))
+        self.wait(1.5)
+        self.play(final1.animate.shift(1.15*UP),langevensolut.animate.shift(1.15*UP))
+        undertextfinal = Tex('This solution can be simplified if $1\ll\\frac{t}{mB} $')
+        self.wait()
+        self.play(ReplacementTransform(final1, undertextfinal))
+        self.play(Indicate(langevensolut[1]))
+        langevensolutsimple = MathTex(
+            '\\overline{\\textbf r^2} = r^2_0+6kTBt'
+        )
+        self.play(ReplacementTransform(langevensolut,langevensolutsimple),undertextfinal.animate.shift(UP))
+        self.play(Uncreate(undertextfinal))
+        self.wait()

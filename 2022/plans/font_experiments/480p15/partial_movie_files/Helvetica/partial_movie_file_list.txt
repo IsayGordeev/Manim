@@ -1,0 +1,12 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/isajgordeev/Desktop/VIDEOS/manim/PROJECTS/media/videos/font_experiments/480p15/partial_movie_files/Helvetica/3163782288_3028313582_1240453128.mp4'
+file 'file:/Users/isajgordeev/Desktop/VIDEOS/manim/PROJECTS/media/videos/font_experiments/480p15/partial_movie_files/Helvetica/2201830969_3493041802_1212561778.mp4'
+file 'file:/Users/isajgordeev/Desktop/VIDEOS/manim/PROJECTS/media/videos/font_experiments/480p15/partial_movie_files/Helvetica/2201830969_3733501650_2791152291.mp4'
+file 'file:/Users/isajgordeev/Desktop/VIDEOS/manim/PROJECTS/media/videos/font_experiments/480p15/partial_movie_files/Helvetica/2201830969_3493041802_897085142.mp4'
+file 'file:/Users/isajgordeev/Desktop/VIDEOS/manim/PROJECTS/media/videos/font_experiments/480p15/partial_movie_files/Helvetica/2201830969_389206153_879098351.mp4'
+file 'file:/Users/isajgordeev/Desktop/VIDEOS/manim/PROJECTS/media/videos/font_experiments/480p15/partial_movie_files/Helvetica/2201830969_1179942082_3585565631.mp4'
+file 'file:/Users/isajgordeev/Desktop/VIDEOS/manim/PROJECTS/media/videos/font_experiments/480p15/partial_movie_files/Helvetica/2201830969_3493041802_1937061091.mp4'
+file 'file:/Users/isajgordeev/Desktop/VIDEOS/manim/PROJECTS/media/videos/font_experiments/480p15/partial_movie_files/Helvetica/2201830969_2324568169_832184734.mp4'
+file 'file:/Users/isajgordeev/Desktop/VIDEOS/manim/PROJECTS/media/videos/font_experiments/480p15/partial_movie_files/Helvetica/2201830969_3493041802_3252962811.mp4'
+file 'file:/Users/isajgordeev/Desktop/VIDEOS/manim/PROJECTS/media/videos/font_experiments/480p15/partial_movie_files/Helvetica/2201830969_2963741620_3094097913.mp4'
+file 'file:/Users/isajgordeev/Desktop/VIDEOS/manim/PROJECTS/media/videos/font_experiments/480p15/partial_movie_files/Helvetica/2201830969_3493041802_3477581866.mp4'

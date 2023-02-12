@@ -1,0 +1,6 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/isajgordeev/Desktop/VIDEOS/manim/PROJECTS/media/videos/font_experiments/480p15/partial_movie_files/quantum_mech/3163782288_4070307768_749079317.mp4'
+file 'file:/Users/isajgordeev/Desktop/VIDEOS/manim/PROJECTS/media/videos/font_experiments/480p15/partial_movie_files/quantum_mech/2201830969_61339159_3484923372.mp4'
+file 'file:/Users/isajgordeev/Desktop/VIDEOS/manim/PROJECTS/media/videos/font_experiments/480p15/partial_movie_files/quantum_mech/2201830969_2285157398_1114319368.mp4'
+file 'file:/Users/isajgordeev/Desktop/VIDEOS/manim/PROJECTS/media/videos/font_experiments/480p15/partial_movie_files/quantum_mech/2201830969_4159587619_4252486725.mp4'
+file 'file:/Users/isajgordeev/Desktop/VIDEOS/manim/PROJECTS/media/videos/font_experiments/480p15/partial_movie_files/quantum_mech/2201830969_2559461702_2698466688.mp4'

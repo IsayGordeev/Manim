@@ -1,0 +1,4 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/isajgordeev/Desktop/VIDEOS/manim/PROJECTS/media/videos/font_experiments/480p15/partial_movie_files/UpdateFromAlphaFuncAnimationEffect/3163782288_3493041802_4101073582.mp4'
+file 'file:/Users/isajgordeev/Desktop/VIDEOS/manim/PROJECTS/media/videos/font_experiments/480p15/partial_movie_files/UpdateFromAlphaFuncAnimationEffect/3163782288_4053686838_1120085553.mp4'
+file 'file:/Users/isajgordeev/Desktop/VIDEOS/manim/PROJECTS/media/videos/font_experiments/480p15/partial_movie_files/UpdateFromAlphaFuncAnimationEffect/2201830969_3493041802_2938755719.mp4'
